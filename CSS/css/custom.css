@@ -1,0 +1,49 @@
+header,
+h1,
+h2,
+h5 {
+  font-family: Arvo;
+}
+
+#scroll_to_top {
+  position: fixed;
+  width: 25px;
+  height: 50%;
+  bottom: 50px;
+  right: 30px;
+}
+.fa-inverse {
+  color: black;
+}
+#scroll_to_top img {
+  width: 25px;
+}
+
+/* Vos customisations des classes de Bootstrap */
+.fond {
+  background-image: url(https://github.com/simplon-roanne/bootstrap-onemillionlines/blob/master/Squelette/images/hero-image.jpg?raw=true);
+}
+.learn {
+  background-color: #d9534f;
+}
+.we-are {
+  color: #d9534f;
+  border-color: #d9534f;
+}
+.line {
+  width: 15%;
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
+  border-color: #d9534f;
+}
+
+/* Responsive Styling */
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}

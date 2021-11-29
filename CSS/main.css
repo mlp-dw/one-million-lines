@@ -1,0 +1,502 @@
+* {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  background-color: white;
+  margin: 0em;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* EN TÊTE */
+
+header {
+  height: 40px;
+  width: 100%;
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header h1 {
+  background-color: transparent;
+  font-size: large;
+  text-align: center;
+  padding: 0 10px 0 10px;
+}
+header img {
+  width: 50px;
+  height: auto;
+  padding: 0 10px 0 10px;
+}
+
+/* NAVIGATION*/
+
+header nav {
+  width: 150px;
+  background-color: transparent;
+}
+header nav ul {
+  height: 100%;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav ul li {
+  list-style: none;
+  background-color: transparent;
+}
+header nav ul li a {
+  background-color: black;
+  color: white;
+  transition: all 1s ease-out;
+}
+header nav ul li a:hover {
+  background-color: #548ec4;
+}
+header nav ul li a:focus {
+  color: black;
+  background-color: white;
+}
+#open,
+#close {
+  display: none;
+}
+
+/* LES ARTICLES*/
+
+/*SPACEX*/
+
+section article:hover {
+  color: #548ec4;
+}
+.spaceX {
+  width: 70%;
+  padding: 10px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.spaceX .container {
+  display: flex;
+  align-items: center;
+}
+.spaceX .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.spaceX p {
+  padding: 20px;
+  line-height: 2.5;
+  text-justify: auto;
+}
+.spaceX h4 {
+  text-transform: uppercase;
+}
+.spaceX img {
+  width: 30%;
+}
+.spaceX .text a {
+  color: red;
+}
+/* .spaceX .text a:hover {
+  text-decoration: underline;
+} */
+.spaceX {
+  animation-name: glissement-gauche;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  position: relative;
+  left: -100%;
+}
+@keyframes glissement-gauche {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+.spaceX .text .move:hover {
+  animation: 0.5s linear 1 alternate shake;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+@keyframes shake {
+  0% {
+    left: 0px;
+  }
+  25% {
+    left: 10px;
+  }
+  50% {
+    left: -10px;
+  }
+  75% {
+    left: 10px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+/* ASIDE SPACEX*/
+
+.acoté {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+}
+.acoté aside {
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: #a7d0f7;
+}
+.acoté:hover {
+  color: #d3d3d3;
+}
+.acoté aside h4 {
+  background-color: transparent;
+}
+/* .aside1:hover {
+  text-decoration: underline;
+}
+.aside2:hover {
+  text-decoration: underline;
+} */
+
+.acoté .aside1 a h4:hover {
+  animation: 3s linear infinite colorchange;
+}
+@keyframes colorchange {
+  0% {
+    color: #548ec4;
+  }
+  25% {
+    color: #3b73aa;
+  }
+  50% {
+    color: #2d5884;
+  }
+  75% {
+    color: #0a3866;
+  }
+  100% {
+    color: #011a33;
+  }
+}
+.acoté .aside2 a h4:hover {
+  animation: 3s linear infinite reverse colorchange;
+}
+@keyframes colorchange {
+  0% {
+    color: #548ec4;
+  }
+  25% {
+    color: #3b73aa;
+  }
+  50% {
+    color: #2d5884;
+  }
+  75% {
+    color: #0a3866;
+  }
+  100% {
+    color: #011a33;
+  }
+}
+.acoté {
+  animation-name: glissement-droit;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  position: relative;
+  right: -100%;
+}
+@keyframes glissement-droit {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+/* TELECOM*/
+
+.telecom {
+  width: 70%;
+  padding: 10px;
+}
+.container2 {
+  display: flex;
+  align-items: center;
+}
+.telecom .container2 {
+  display: flex;
+  align-items: center;
+}
+.telecom .opérateur {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.telecom p {
+  padding-left: 20px;
+  line-height: 2.5;
+  text-justify: auto;
+}
+.telecom h4 {
+  text-transform: uppercase;
+}
+.telecom img {
+  width: 30%;
+}
+.telecom .opérateur a {
+  color: red;
+}
+.telecom .opérateur a:hover {
+  text-decoration: underline;
+}
+/*ASIDE TELECOM*/
+
+.tesacoté {
+  width: 30%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: #d3d3d3;
+}
+.tesacoté h4 {
+  background-color: transparent;
+  text-align: center;
+}
+.tesacoté:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 5px 0 0 #548ec4;
+}
+
+/*mettre le fond transparent*/
+footer div {
+  background-color: transparent;
+  color: white;
+}
+footer div ul {
+  background-color: transparent;
+  color: white;
+}
+footer div ul p {
+  background-color: transparent;
+  color: white;
+}
+footer div ul li {
+  background-color: transparent;
+  color: white;
+}
+footer div ul li a {
+  background-color: transparent;
+  color: #d6c2c2;
+}
+/*fin de la mise en forme des éléments en transparent*/
+footer div ul li a:hover {
+  text-decoration: underline;
+}
+.partener {
+  background-color: transparent;
+  color: white;
+}
+.contact {
+  background-color: transparent;
+  color: white;
+  padding-right: 10px;
+}
+.contact ul p {
+  animation: 4s sizing;
+}
+@keyframes sizing {
+  0% {
+    font-size: auto;
+  }
+  50% {
+    font-size: 25px;
+  }
+  100% {
+    font-size: auto;
+  }
+}
+header {
+  -webkit-animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  -ms-animation: fadein 3s;
+  -o-animation: fadein 3s;
+  animation: fadein 3s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+footer {
+  -webkit-animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  -ms-animation: fadein 3s;
+  -o-animation: fadein 3s;
+  animation: fadein 3s;
+}
+.partener ul p {
+  animation: 4s linear infinite rvb;
+}
+@keyframes rvb {
+  0% {
+    color: white;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: red;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .spaceX img {
+    width: 50%;
+  }
+  header nav {
+    display: none;
+  }
+  header nav ul li a,
+  .acoté,
+  .spaceX .text p {
+    font-size: 1.2em;
+  }
+  .spaceX .text p {
+    width: 100%;
+    margin-bottom: 0px;
+    line-height: 1.5;
+  }
+  .container .spaceX {
+    width: 100%;
+  }
+  .container {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  header {
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .spaceX img {
+    max-width: 100%;
+    padding: 5px;
+  }
+  .spaceX {
+    text-align: center;
+    margin-left: 15%;
+    padding: 1%;
+  }
+  .spaceX .text p {
+    width: 90%;
+    padding: 15px;
+  }
+  .acoté {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  header nav {
+    position: fixed;
+    z-index: 2;
+    background-color: #000;
+    width: 250px;
+    height: 100vh;
+    left: 0;
+    transform: translateX(-250px);
+    transition: transform 0.25s ease-in-out;
+  }
+  header nav.open {
+    transform: translateX(0px);
+  }
+  header nav ul {
+    height: auto;
+    margin-top: 40px;
+  }
+
+  header nav ul li,
+  header nav ul li a {
+    height: auto;
+  }
+  #open {
+    display: block;
+    position: fixed;
+    height: 30px;
+    left: 10px;
+    /* top: 5px; */
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+  }
+  #open img {
+    max-height: 100%;
+  }
+  #open,
+  #open img {
+    width: auto;
+  }
+  #close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2em;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+  }
+}
